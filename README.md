@@ -1,86 +1,81 @@
-# Home Network Vulnerability Assessment Using Kali Linux and Nmap
+# Cybersecurity Lab Projects
 
-## Project Overview
+This repository contains hands-on cybersecurity projects conducted in a home lab environment using Kali Linux and open-source security tools.
 
-This project performs a basic internal vulnerability assessment of a home network using Kali Linux and Nmap. The objective was to identify active devices on the network, discover exposed services, and evaluate potential security risks.
+The objective of these projects is to build foundational skills in:
 
-The assessment follows a typical vulnerability assessment workflow including network discovery, port scanning, service detection, vulnerability identification, and risk analysis.
+- Network security
+- Vulnerability assessment
+- Packet analysis
+- Security documentation
+
+All experiments were conducted in a controlled local network environment.
 
 ---
 
-## Tools Used
+# Project 1: Home Network Vulnerability Assessment
+
+Tool Used:
+- Nmap
+
+Objective:
+Perform a basic vulnerability assessment on a local network to identify exposed services and potential security risks.
+
+Key Activities:
+- Network discovery
+- Port scanning
+- Service enumeration
+- Risk assessment
+
+Report:
+Project 1 Home Network Vulnerability Assessment.pdf
+
+---
+
+# Project 2: Network Traffic Analysis
+
+Tool Used:
+- Wireshark
+
+Objective:
+Capture and analyze network packets to understand how devices communicate within a network.
+
+Protocols Observed:
+- ARP
+- DNS
+- ICMPv6
+- TCP
+- TLSv1.3 (HTTPS)
+
+Key Activities:
+- Packet capture
+- Protocol filtering
+- Traffic analysis
+- Identification of encrypted communication
+
+Report:
+Project 2 Network Traffic Analysis Wireshark.pdf
+
+---
+
+# Tools Used
 
 - Kali Linux
+- Wireshark
 - Nmap
 - Oracle VirtualBox
 
 ---
 
-## Network Scope
+# Skills Demonstrated
 
-Target Network: 192.168.0.0/24
-
-Devices discovered during the assessment:
-
-| IP Address | Device |
-|------------|--------|
-| 192.168.0.1 | Router / Gateway |
-| 192.168.0.X | Internal Host |
-| 192.168.0.X | Kali Assessment Machine |
+- Vulnerability assessment
+- Network traffic analysis
+- Protocol identification
+- Cybersecurity reporting
 
 ---
 
-## Methodology
+# Disclaimer
 
-The following steps were performed during the assessment:
-
-1. Environment Setup
-2. Network Discovery
-3. Port Scanning
-4. Service Enumeration
-5. Vulnerability Identification
-6. Risk Analysis
-
----
-
-## Key Findings
-
-- Router exposes web management services on ports 80 (HTTP) and 443 (HTTPS)
-- Administrative services such as SSH, FTP, and Telnet are filtered by the firewall
-- A Windows host was discovered running multiple HTTP services
-- No critical vulnerabilities were identified during the scan
-- Router login form showed a possible CSRF exposure
-
-Overall risk level: **Low**
-
----
-
-## Example Commands Used
-
-Network discovery:
-nmap -sn 192.168.0.0/24
-
-
-Router port scan
-nmap 192.168.0.1
-
-
-Service and OS detection
-nmap -sV -O 192.168.0.1
-
-
-Vulnerability scan
-nmap --script vuln 192.168.0.1
-
----
-
-## Project Outcome
-
-This project demonstrates the workflow of a basic vulnerability assessment including reconnaissance, service enumeration, vulnerability scanning, and security reporting.
-The project provides hands-on experience using Kali Linux and Nmap to evaluate the security posture of a local network environment.
-
----
-
-## Author
-
-Cybersecurity learning project
+These projects were conducted in a personal lab environment for educational purposes only.
